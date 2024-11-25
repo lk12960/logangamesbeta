@@ -1,129 +1,60 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <style>
-    body {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+<html><head><base target="_blank"></head><body><div id="fr" data="<iframe width=&quot;100%&quot; height=&quot;100%&quot; src=&quot;https://classroom-opensocial.googleusercontent.com/gadgets/ifr?url=https://groups.google.com/group/classroomgoogl-net/attach/9abf3f4a31562/xxxxf.xml?part=0.1&amp;view=1&amp;container=ig&quot; frameborder=&quot;0&quot; allowfullscreen></iframe>"></div>
+<button class="c-button" type="button" onclick="PlayTo(this)">CLICK TO PLAY</button>
+
+<style>
+  .c-button {
+    min-width: 100%;
+    font-family: fantasy;
+    appearance: auto;
+    border: 0;
+    border-color: #fff;
+    border-radius: 5px;
+    background: #000;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .c-button:hover {
+    background: #320d90;
+  }
+  
+  .c-button:focus {
+    outline: 0;
+    box-shadow: 0 0 0 4px #cbd6ee;
+  }
+  
+  .c-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .bottom-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+</style>
+
+<script>
+  function PlayTo(i) {
+    // Önceki sibling metin düğümü olabilir, bu yüzden bir önceki "element" siblingi bulalım
+    var n = i.previousElementSibling;
+    if (n) {
+      // Div'in içeriğini iframe ile güncelleyelim
+      n.innerHTML = n.getAttribute("data");
+      // Butonu gizleyelim
+      i.style.display = "none";
     }
-  </style>
-</head>
-<body onclick="openFullscreen()">
-
-  <script>
-    /* Get the documentElement (<html>) to display the page in fullscreen */
-    var elem = document.documentElement;
-
-    /* View in fullscreen */
-    function openFullscreen() {
-      if (elem.requestFullscreen) {
-        elem.requestFullscreen();
-      } else if (elem.webkitRequestFullscreen) { /* Safari */
-        elem.webkitRequestFullscreen();
-      } else if (elem.msRequestFullscreen) { /* IE11 */
-        elem.msRequestFullscreen();
-      }
-    }
-
-    /* Close fullscreen */
-    function closeFullscreen() {
-      if (document.exitFullscreen) {
-        document.exitFullscreen();
-      } else if (document.webkitExitFullscreen) { /* Safari */
-        document.webkitExitFullscreen();
-      } else if (document.msExitFullscreen) { /* IE11 */
-        document.msExitFullscreen();
-      }
-    }
-  </script>
-</body>
-</html>
-
-
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>10 Minutes Till Dawn</title>
-    <script src="Build/UnityLoader.js"></script>
-    <link rel="icon" href="icon.png">
-    <script src="/js/main.js"></script>
-    <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/10MinutesTillDawnWebGL.json");
-      var scaleToFit;
-      try {
-        scaleToFit = !!JSON.parse("");
-      } catch (e) {
-        scaleToFit = true;
-      }
-
-      function onResize() {
-        var canvas = gameInstance.Module.canvas;
-        var container = gameInstance.container;
-        var w;
-        var h;
-
-        if (scaleToFit) {
-          w = window.innerWidth;
-          h = window.innerHeight;
-
-          var r = 675 / 1200;
-
-          if (w * r > window.innerHeight) {
-            w = Math.min(w, Math.ceil(h / r));
-          }
-          h = Math.floor(w * r);
-        } else {
-          w = 1200;
-          h = 675;
-        }
-
-        container.style.width = canvas.style.width = w + "px";
-        container.style.height = canvas.style.height = h + "px";
-        container.style.top = Math.floor((window.innerHeight - h) / 2) + "px";
-        container.style.left = Math.floor((window.innerWidth - w) / 2) + "px";
-      }
-      window.addEventListener("resize", onResize);
-    </script>
-    <style>
-      html,
-      body {
-        background: #000;
-        background: ;
-        width: 100%;
-        height: 100%;
-        overflow: visible;
-        padding: 0;
-        margin: 0;
-      }
-
-      div#gameContainer {
-        background: transparent !important;
-        position: absolute;
-      }
-
-      div#gameContainer canvas {
-        position: absolute;
-      }
-
-      div#gameContainer[data-pixelated="true"] canvas {
-        image-rendering: optimizeSpeed;
-        image-rendering: -webkit-crisp-edges;
-        image-rendering: -moz-crisp-edges;
-        image-rendering: -o-crisp-edges;
-        image-rendering: crisp-edges;
-        image-rendering: -webkit-optimize-contrast;
-        image-rendering: optimize-contrast;
-        image-rendering: pixelated;
-        -ms-interpolation-mode: nearest-neighbor;
-      }
-    </style>
-  </head>
-
-  <body onload="onResize();">
-    <div id="gameContainer" data-pixelated="true"></div>
-  </body>
-</html>
+  }
+</script>
+</body></html>
