@@ -1,41 +1,61 @@
-<html><head><base target="_blank"></head><body><div id="fr" data="<iframe width=&quot;100%&quot; height=&quot;100%&quot; src=&quot;https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://64345986-62434566.preview.editmysite.com/uploads/9/9/0/8/139890129/custom_themes/104868751615748392/files/basran.xml&quot; frameborder=&quot;0&quot; allowfullscreen></iframe>"><iframe width="100%" height="100%" src="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://64345986-62434566.preview.editmysite.com/uploads/9/9/0/8/139890129/custom_themes/104868751615748392/files/basran.xml" frameborder="0" allowfullscreen=""></iframe></div><button class="c-button" type="button" onclick="PlayTo(this)" style="display: none;">Play on Poopy Games</button>
-<style>
-.c-button {
-  min-width: 100%;
-  font-family: fantasy;
-  appearance: auto;
-  border: 0;
-  border-color: #fff;
-  border-radius: 5px;
-  background: #274e13;
-  color: #fff;
-
-  font-size: 30px;
-  cursor: pointer;
-}
-
-.c-button:hover {
-  background: #6aa84f;
-}
-
-.c-button:focus {
-  outline: none;
-  box-shadow: 0 0 0 4px #cbd6ee;
-}
+<body><div id="fr" data="<iframe width=&quot;100%&quot; height=&quot;100%&quot; src=&quot;https://classroom-opensocial.googleusercontent.com/gadgets/ifr?url=https://groups.google.com/group/classroomgoogl-net/attach/9abf3f4a31562/xxxxf.xml?part=0.1&amp;view=1&amp;container=ig&quot; frameborder=&quot;0&quot; allowfullscreen></iframe>"></div>
+  <button class="c-button" type="button" onclick="PlayTo(this)">CLICK TO PLAY</button>
+  <div class="bottom-text">L Unblocked Games</div>
   
- .c-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
-
-</style>
-
-<script>
-function PlayTo(sel){
-  var div = sel.previousSibling;
-  div.innerHTML=div.getAttribute('data');
-  sel.style.display = "none";
-}
-</script></body></html>
+  <style>
+    .c-button {
+      min-width: 100%;
+      font-family: fantasy;
+      appearance: auto;
+      border: 0;
+      border-color: #fff;
+      border-radius: 5px;
+      background: #000;
+      color: #fff;
+      font-size: 30px;
+      cursor: pointer;
+    }
+    
+    .c-button:hover {
+      background: #320d90;
+    }
+    
+    .c-button:focus {
+      outline: 0;
+      box-shadow: 0 0 0 4px #cbd6ee;
+    }
+    
+    .c-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+    
+    .bottom-text {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: Arial, sans-serif;
+      font-size: 20px;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+  </style>
+  
+  <script>
+    function PlayTo(i) {
+      // Önceki sibling metin düğümü olabilir, bu yüzden bir önceki "element" siblingi bulalım
+      var n = i.previousElementSibling;
+      if (n) {
+        // Div'in içeriğini iframe ile güncelleyelim
+        n.innerHTML = n.getAttribute("data");
+        // Butonu gizleyelim
+        i.style.display = "none";
+      }
+    }
+  </script>
+  </body>
