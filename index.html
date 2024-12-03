@@ -322,7 +322,7 @@
                 <span class="navbar-item" onclick="window.location = 'https:/' + '/uv.hop.sh';">Proxies</span>
                 <span class="navbar-item" id="openSettings">Alternate URLs</span>-->
       <span class="navbar-item" onclick="toggleCloak();" id="toggleCloak">Enable Tab Cloak</span>
-      <span class="navbar-item" onclick="alert('Update Log v1.3: (Scroll Down for Credits)\n\nV1.3 (11/27/24)\n-Added multiple games from request form\n-Fixed Multiple Games\n\nV1.1\n-Removed unneeded games from storage\n\nCredits:\n-Py660 for the code for the top bar header, and update log code.\n-Nebelung for finding the Tab Cloak code')">Update Log</span>
+      <span class="navbar-item" onclick="alert('Update Log v1.5:\n\nV1.5 (12/3/2024)\n- Fixed Following Games:\n  • Stickman Hook\n  • Snake.io\n  • Drift Hunters\n  • OvO\n  • Rocket Pult\n  • Hole.io (formerly Eat.io)\n  • Eggy Car\n\n- Important Notice:\n  • Twerk Race 3D will not be getting fixed')">Update Log</span>
       <script x-alias-name="cloak-button-display">
         if (getCookie('cloak')){
                         document.getElementById('toggleCloak').innerHTML = 'Disable Tab Cloak';
@@ -828,63 +828,40 @@ document.cookie = "password=creeper";
 
           <!--Games-->
           <a id="Suggestions/ReportBlockedGame" class="link" onclick="window.location = 'https://forms.gle/DW9LDNTHgrsyCBCX7';"target="_blank"><span class="bar"></span><img src="./icons/forms.jpg"><b>Game Request</b><span class="badge"><i class="fa-solid fa-user"></i> RECOMMENDED</span></a>
-          <a id="StickmanHook" class="link" onclick="cloak('/play/stickmanhook/')"target="_blank"><span class="bar"></span><img src="./icons/stickmanhook.jpg"><b>Stickman Hook</b><span class="badge"><i class="fa fa-star" aria-hidden="true"></i> NEW</span></a>
-          <a id="GunSpin" class="link pop" onclick="cloak('/play/gunspin/')"target="_blank"><span class="bar"></span><img src="./icons/gunspin.png"><b>Gunspin</b><span class="badge"><i class="fa fa-star" aria-hidden="true"></i> POPULAR</span></a>
+          <a id="StickmanHook" class="link" onclick="window.location = 'https://lk12960.github.io/stickman-hook/'" target="_blank"><span class="bar"></span><img src="./icons/stickmanhook.jpg"><b>Stickman Hook</b><span class="badge"><i class="fa fa-star" aria-hidden="true"></i> FIXED</span></a>
+          <a id="GunSpin" class="link pop" onclick="cloak('/play/gunspin/')"target="_blank"><span class="bar"></span><img src="./icons/gunspin.png"><b>Gunspin</b><span class="badge"><i class="fa fa-star" aria-hidden="true"></i> NEW/POPULAR</span></a>
           <a id="volleyrandom" class="link" onclick="cloak('/play/volley-random/')"target="_blank"><span class="bar"></span><img src="./icons/volley.png"><b>Volley Random</b><span class="badge"><i class="fa fa-star" aria-hidden="true"></i> NEW</span></a>
           <a id="rooftopsnipers" class="link" onclick="cloak('/play/rooftop-snipers-2/')"target="_blank"><span class="bar"></span><img src="./icons/rooftopsnipers.png"><b>Rooftop Snipers</b><span class="badge"><i class="fa fa-star" aria-hidden="true"></i> NEW</span></a>
-          <a id="snakeio" class="link" onclick="cloak('/play/snakeio/')"target="_blank"><span class="bar"></span><img src="./icons/snakeio.png"><b>Snake.io</b><span class="badge"><i class="fa fa-star" aria-hidden="true"></i> BROKEN</span></a>
+          <a id="snakeio" class="link" onclick="window.location = 'https://lk12960.github.io/snake-io/'" target="_blank"><span class="bar"></span><img src="./icons/snakeio.png"><b>Snake.io</b><span class="badge"><i class="fa fa-star" aria-hidden="true"></i> FIXED</span></a>
           <a id="soccerrandom" class="link" onclick="cloak('/play/soccerrandom/')"target="_blank"><span class="bar"></span><img src="./icons/soccerrandom.webp"><b>Soccer Random</b><span class="badge"><i class="fa fa-star" aria-hidden="true"></i> NEW</span></a>
           <a id="Survival Race: Arena King" class="link pop" onclick="cloak('/play/arenaking/')"target="_blank"><span class="bar"></span><img src="./icons/arenaking.png"><b>Survival Race: Arena King</b><span class="badge"><i class="fa fa-star" aria-hidden="true"></i> POPULAR</span></a>
-          <a id="DriftBoss" class="link" onclick="cloak('/play/driftboss')"target="_blank"><span class="bar"></span><img src="./icons/driftboss.png"><b>Drift Boss</b><span class="badge"><i class="fa fa-star" aria-hidden="true"></i> NEW</span></a>
-          <a id="DriftHunters" class="link" onclick="cloak('/play/drifthunters/')"target="_blank"><span class="bar"></span><img src="./icons/drifthunters.png"><b>Drift Hunters</b><span class="badge"><i class="fa fa-star" aria-hidden="true"></i> NEW</span></a>
+          <a id="DriftBoss" class="link pop" onclick="cloak('/play/driftboss')"target="_blank"><span class="bar"></span><img src="./icons/driftboss.png"><b>Drift Boss</b><span class="badge"><i class="fa fa-star" aria-hidden="true"></i> NEW</span></a>
+          <a id="DriftHunters" class="link" onclick="window.location = 'https://lk12960.github.io/drift-hunters/'" target="_blank"><span class="bar"></span><img src="./icons/drifthunters.png"><b>Drift Hunters</b><span class="badge"><i class="fa fa-star" aria-hidden="true"></i> FIXED</span></a>
           <a id="basketrandom" class="link" onclick="cloak('/play/basketrandom/')" target="_blank"><span class="bar"></span><img src="./icons/basketrandom.webp"><b>Basket Random</b><span class="badge"><i class="fa fa-star" aria-hidden="true"></i> FIXED</span></a>
           <a id="blockblast" class="link pop" onclick="cloak('/play/blockblast/')"target="_blank"><span class="bar"></span><img src="./icons/blockblast.png"><b>Block Blast</b><span class="badge"><i class="fa fa-star" aria-hidden="true"></i> POPULAR</span></a>
           <a id="snowballio" class="link" onclick="cloak('/play/snowball/')"target="_blank"><span class="bar"></span><img src="./icons/snowball.png"><b>Snowball.io</b><span class="badge"><i class="fa fa-star" aria-hidden="true"></i> NEW</span></a>
-          <a id="ovo" class="link" onclick="cloak('/play/OvO/')" target="_blank"><span class="bar"></span><img src="./icons/ovo.png"><b>OvO</b><span class="badge"><i class="fa fa-star" aria-hidden="true"></i> BROKEN</span></a>
-          <a id="ovo2" class="link" onclick="cloak('/play/OvO2/')" target="_blank"><span class="bar"></span><img src="./icons/ovo2.png"><b>OvO 2</b><span class="badge"><i class="fa fa-star" aria-hidden="true"></i> BROKEN</span></a>
+          <a id="ovo" class="link" onclick="window.location = 'https://lk12960.github.io/ovo/'" target="_blank"><span class="bar"></span><img src="./icons/ovo.png"><b>OvO</b><span class="badge"><i class="fa fa-star" aria-hidden="true"></i> FIXED</span></a>
           <a id="Baksetball Stars" class="link" onclick="cloak('/play/basketball-stars/')"target="_blank"><span class="bar"></span><img src="./icons/basketball-stars.png"><b>Basketball Stars</b><span class="badge"><i class="fa fa-wrench" aria-hidden="true"></i>Fixed</span></a>
-          <a id="Rocket Pult" class="link pop" onclick="cloak('/play/rocket-pult/')"target="_blank"><span class="bar"></span><img src="./icons/Rocketpult.webp"><b>Rocket Pult</b><span class="badge"><i class="fa fa-star"></i> POPULAR</span></a>
-          <a id="Unicycle Hero" class="link" onclick="cloak('/play/unicycle-hero/')"target="_blank"><span class="bar"></span><img src="./icons/unicycle-hero.webp"><b>Unicycle Hero</b><span class="badge"><i class="fa fa-star"></i> NEW</span></a>
+          <a id="RocketPult" class="link pop" onclick="window.location = 'https://lk12960.github.io/rocket-pult/'" target="_blank"><span class="bar"></span><img src="./icons/Rocketpult.webp"><b>Rocket Pult</b><span class="badge"><i class="fa fa-star"></i> POPULAR/FIXED</span></a>
+          <a id="Unicycle Hero" class="link pop" onclick="cloak('/play/unicycle-hero/')"target="_blank"><span class="bar"></span><img src="./icons/unicycle-hero.webp"><b>Unicycle Hero</b><span class="badge"><i class="fa fa-star"></i> POPULAR</span></a>
           <a id="Paper.io 2" class="link" onclick="cloak('/play/paperio/')"target="_blank"><span class="bar"></span><img src="./icons/paperio.webp"><b>Paper.io 2</b><span class="badge"><i class="fa-solid fa-user"></i> RECOMMENDED</span></a>
-          <a id="Slope" class="link pop" onclick="cloak('/play/slope/')"target="_blank"><span class="bar"></span><img src="./icons/slope.webp"><b>Slope</b><span class="badge"><i class="fa-solid fa-user"></i> RECOMMENDED</span></a>
-          <a id="Minecraft" class="link pop" onclick="cloak('/play/minecraft/')"target="_blank"><span class="bar"></span><img src="./icons/minecraft.webp"><b>Minecraft</b><span class="badge"><i class="fa-solid fa-user"></i> RECOMMENDED</span></a>
-          <a id="1v1.lol" class="link pop" onclick="cloak('/play/1v1/')"target="_blank"><span class="bar"></span><img src="./icons/1v1.webp"><b>1v1.lol</b>
-            <span class="badge"><i class="fa-solid fa-star"></i>Broken</span><span class="badge"></a>
-          <a id="Cookie Clicker" class="link pop" onclick="cloak('/play/cookie/')"
-target="_blank"><span class="bar"></span><img src="./icons/cookie.webp"><b>Cookie Clicker</b><span class="badge"><i class="fa-solid fa-star"></i> POPULAR</span></b></span></a>
-          <a id="Crossyroad" class="link pop" onclick="cloak('/play/crossyroad/')"
-target="_blank"><span class="bar"></span><img src="./icons/crossyroad.webp"><b>Crossyroad</b>
-            <span class="badge"><i class="fa-solid fa-star"></i> POPULAR</span></a>
-          <a id="Eat.io" class="link" onclick="cloak('/play/eatio/')"
-target="_blank"><span class="bar"></span><img src="./icons/eatio.webp"><b>Eat.io</b></a>
-          <a id="Eggy Car" class="link" onclick="cloak('/play/eggy-car/')"
-target="_blank"><span class="bar"></span><img src="./icons/eggy-car.webp"><b>Eggy Car</b></a>
-          <a id="Flappy Bird" class="link" onclick="cloak('/play/flappy/')"
-target="_blank"><span class="bar"></span><img src="./icons/flappy.webp"><b>Flappy Bird</b></a>
-          <a id="Impossible Quiz" class="link" onclick="cloak('/play/impossiblequiz/')"
-target="_blank"><span class="bar"></span><img src="./icons/impossiblequiz.webp"><b>Impossible Quiz</b></a>
-          <a id="Kitchen Gun Game" class="link" onclick="cloak('/play/kitchen-gun-game/')"
-target="_blank"><span class="bar"></span><img src="./icons/kitchen-gun-game.webp"><b>Kitchen Gun Game</b></a>
-          <a id="Multiplayer Pong" class="link two" onclick="cloak('/play/multiplayer-pong/')"
-target="_blank"><span class="bar"></span><img src="./icons/pong.webp"><b>Multiplayer Pong</b><span class="badge"><i class="fa-solid fa-user"></i> 2 Player</span></a>
-          <a id="Pong" class="link" onclick="cloak('/play/pong/')"
-target="_blank"><span class="bar"></span><img src="./icons/pong.webp"><b>Pong</b></a>
-          <a id="Retro Bowl" class="link" onclick="cloak('/play/retrobowl/')"
-target="_blank"><span class="bar"></span><img src="./icons/retrobowl.webp"><b>Retro Bowl</b></a>
-          <a id="Subway Surfers: San Francisco" class="link pop" onclick="cloak('/play/subwaysurferssanfrancisco/')"
-target="_blank"><span class="bar"></span><img src="./icons/subsan.webp"><b>Subway Surfers: San Francisco</b>
-            <span class="badge"><i class="fa-solid fa-star"></i> POPULAR</span></a>
-          <a id="SuperHot" class="link pop" onclick="cloak('/play/superhot/')"
-target="_blank"><span class="bar"></span><img src="./icons/superhot.webp"><b>SuperHot</b>
-            <span class="badge"><i class="fa-solid fa-star"></i> POPULAR</span></a>
-          <a id="Tetris" class="link" onclick="cloak('/play/tetris/')"
-target="_blank"><span class="bar"></span><img src="./icons/tetris.webp"><b>Tetris</b></a>
-          <a id="Tic Tac Toe" class="link" onclick="cloak('/play/tic-tac-toe/')"
-target="_blank"><span class="bar"></span><img src="./icons/toe2.webp"><b>Tic Tac Toe</b></a>
-          <a id="Worlds hardest game" class="link" onclick="cloak('/play/worlds-hardest-game/')"
-target="_blank"><span class="bar"></span><img src="./icons/whg.webp"><b>Worlds hardest game</b></a>
-          <a id="Worlds hardest game 2" class="link" onclick="cloak('/play/worlds-hardest-game-2/')"
-target="_blank"><span class="bar"></span><img src="./icons/whg.webp"><b>Worlds hardest game 2</b></a>
+          <a id="Slope" class="link" onclick="cloak('/play/slope/')"target="_blank"><span class="bar"></span><img src="./icons/slope.webp"><b>Slope</b><span class="badge"><i class="fa-solid fa-user"></i> RECOMMENDED</span></a>
+          <a id="Minecraft" class="link" onclick="cloak('/play/minecraft/')"target="_blank"><span class="bar"></span><img src="./icons/minecraft.webp"><b>Minecraft</b><span class="badge"><i class="fa-solid fa-user"></i> RECOMMENDED</span></a>
+          <a id="1v1.lol" class="link" onclick="cloak('/play/1v1/')" target="_blank"><span class="bar"></span><img src="./icons/1v1.webp"><b>1v1.lol</b><span class="badge"><i class="fa-solid fa-star"></i> Broken</span></a>
+          <a id="Cookie Clicker" class="link pop" onclick="cloak('/play/cookie/')" target="_blank"><span class="bar"></span><img src="./icons/cookie.webp"><b>Cookie Clicker</b><span class="badge"><i class="fa-solid fa-star"></i> POPULAR</span></a>
+          <a id="Crossyroad" class="link" onclick="cloak('/play/crossyroad/')" target="_blank"><span class="bar"></span><img src="./icons/crossyroad.webp"><b>Crossyroad</b><span class="badge"><i class="fa-solid fa-star"></i></span></a>
+          <a id="Eat.io" class="link" onclick="window.location = 'https://lk12960.github.io/hole-io/'" target="_blank"><span class="bar"></span><img src="./icons/eatio.webp"><b>Eat.io</b><span class="badge"><i class="fa fa-star" aria-hidden="true"></i> FIXED</span></a>
+          <a id="EggyCar" class="link" onclick="window.location = 'https://lk12960.github.io/eggy-car/'" target="_blank"><span class="bar"></span><img src="./icons/eggy-car.webp"><b>Eggy Car</b><span class="badge"><i class="fa fa-star" aria-hidden="true"></i> FIXED</span></a>
+          <a id="Flappy Bird" class="link" onclick="cloak('/play/flappy/')" target="_blank"><span class="bar"></span><img src="./icons/flappy.webp"><b>Flappy Bird</b></a>
+          <a id="Impossible Quiz" class="link" onclick="cloak('/play/impossiblequiz/')" target="_blank"><span class="bar"></span><img src="./icons/impossiblequiz.webp"><b>Impossible Quiz</b></a>
+          <a id="Kitchen Gun Game" class="link" onclick="cloak('/play/kitchen-gun-game/')" target="_blank"><span class="bar"></span><img src="./icons/kitchen-gun-game.webp"><b>Kitchen Gun Game</b></a>
+          <a id="Multiplayer Pong" class="link two" onclick="cloak('/play/multiplayer-pong/')" target="_blank"><span class="bar"></span><img src="./icons/pong.webp"><b>Multiplayer Pong</b><span class="badge"><i class="fa-solid fa-user"></i> 2 Player</span></a>
+          <a id="Pong" class="link" onclick="cloak('/play/pong/')" target="_blank"><span class="bar"></span><img src="./icons/pong.webp"><b>Pong</b></a>
+          <a id="Retro Bowl" class="link" onclick="cloak('/play/retrobowl/')" target="_blank"><span class="bar"></span><img src="./icons/retrobowl.webp"><b>Retro Bowl</b></a>
+          <a id="Tic Tac Toe" class="link" onclick="cloak('/play/tic-tac-toe/')" target="_blank"><span class="bar"></span><img src="./icons/toe2.webp"><b>Tic Tac Toe</b></a>
+          <a id="Worlds hardest game" class="link" onclick="cloak('/play/worlds-hardest-game/')" target="_blank"><span class="bar"></span><img src="./icons/whg.webp"><b>Worlds hardest game</b></a>
+          <a id="Worlds hardest game 2" class="link" onclick="cloak('/play/worlds-hardest-game-2/')" target="_blank"><span class="bar"></span><img src="./icons/whg.webp"><b>Worlds hardest game 2</b></a>
+
           
           <p class="game_title">Please do not play these games in school without permission. Doing so can result
             in losing a computer or other school punishment. You also agree that we are using analysis to collect
